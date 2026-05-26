@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=, initial-scale=1.0">
+
+<link rel="stylesheet" href="/static/style.css">
+
+<title>Vending Machine</title>
+
+<div class="caja">
+
+    <!-- Vitrina + estanterías -->
+    <div class="fondoCaja">
+        <div class="vitrina">
+
+            <div class="estanterias">
+                <div class="fila">
+                    <div class="slot" data-id="1">
+                        <div class="producto"></div>
+                        <span class="id">1</span>
+                    </div>
+                    <div class="slot" data-id="2">
+                        <div class="producto"></div>
+                        <span class="id">2</span>
+                    </div>
+                    <div class="slot" data-id="3">
+                        <div class="producto"></div>
+                        <span class="id">3</span>
+                    </div>
+                </div>
+
+                <div class="fila">
+                    <div class="slot" data-id="4">
+                        <div class="producto"></div>
+                        <span class="id">4</span>
+                    </div>
+                    <div class="slot" data-id="5">
+                        <div class="producto"></div>
+                        <span class="id">5</span>
+                    </div>
+                    <div class="slot" data-id="6">
+                        <div class="producto"></div>
+                        <span class="id">6</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bandeja donde cae el producto -->
+        <div class="bandeja"></div>
+    </div>
+
+    <!-- Panel numérico -->
+    <div class="panel">
+
+        <div class="displayNumerico">
+            <span id="displayTexto">---</span>
+        </div>
+
+        <div class="teclado">
+            <button data-valor="1">1</button><button data-valor="2">2</button><button data-valor="3">3</button>
+            <button data-valor="4">4</button><button data-valor="5">5</button><button data-valor="6">6</button>
+            <button data-valor="7">7</button><button data-valor="8">8</button><button data-valor="9">9</button>
+            <button data-valor="0">0</button>
+        </div>
+
+        <div class="acciones">
+            <button class="aceptar" id="aceptar">Aceptar</button>
+            <button class="borrar" id="borrar">Borrar</button>
+        </div>
+
+        <div class="modos">
+            <button class="modo" id="reponer">Reponer</button>
+            <button class="modo activo" id="comprar">Comprar</button>
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</div>
+
+<body>
+
+</body>
+
+</html>
